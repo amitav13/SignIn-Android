@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/kinvey/!svn/ver/6080/java-library/trunk/samples/signin-android/src/com/kinvey/sample/signin
+END
+KinveyAccountAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/kinvey/!svn/ver/5939/java-library/trunk/samples/signin-android/src/com/kinvey/sample/signin/KinveyAccountAuthenticator.java
+END
+RegisterNewAccountActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/kinvey/!svn/ver/6081/java-library/trunk/samples/signin-android/src/com/kinvey/sample/signin/RegisterNewAccountActivity.java
+END
+UserLogin.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/kinvey/!svn/ver/5870/java-library/trunk/samples/signin-android/src/com/kinvey/sample/signin/UserLogin.java
+END
+MainActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/kinvey/!svn/ver/6081/java-library/trunk/samples/signin-android/src/com/kinvey/sample/signin/MainActivity.java
+END
+LoginActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/kinvey/!svn/ver/6081/java-library/trunk/samples/signin-android/src/com/kinvey/sample/signin/LoginActivity.java
+END
+TwitterLoginActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/kinvey/!svn/ver/6081/java-library/trunk/samples/signin-android/src/com/kinvey/sample/signin/TwitterLoginActivity.java
+END
+FacebookLoginActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/kinvey/!svn/ver/6081/java-library/trunk/samples/signin-android/src/com/kinvey/sample/signin/FacebookLoginActivity.java
+END
