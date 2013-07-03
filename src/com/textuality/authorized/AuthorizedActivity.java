@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+import android.accounts.AccountAuthenticatorActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -45,7 +46,7 @@ import com.google.android.gms.auth.UserRecoverableAuthException;
  *  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
  *      super.onActivityResult(requestCode, resultCode, data);
  */
-public class AuthorizedActivity extends Activity {
+public class AuthorizedActivity extends AccountAuthenticatorActivity {
     private static final int REQUEST_CODE = new Random().nextInt(1000000000);
     public static final String TAG = "AuthorizedActivity";
 

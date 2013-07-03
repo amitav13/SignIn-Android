@@ -1,16 +1,18 @@
 package com.kinvey.sample.signin;
 
-import com.google.api.client.http.HttpTransport;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-import android.os.Bundle;
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import com.google.api.client.http.HttpTransport;
+import com.kinvey.android.Client;
 
 /**
  * Launch Activity checks to see if a KinveyUser exists as a
@@ -29,6 +31,8 @@ public class MainActivity extends Activity {
 	private TextView tvHello;
 
     private static final Level LOGGING_LEVEL = Level.FINEST;
+    
+    private Client kinveyClient;
 
 
     @Override
@@ -38,13 +42,15 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
         Logger.getLogger(HttpTransport.class.getName()).setLevel(LOGGING_LEVEL);
 
+        kinveyClient = ((UserLogin) getApplication()).getKinveyService();
 
 
         tvHello = (TextView) findViewById(R.id.tvHello);
-		if (loggedIn()) {
+		if (kinveyClient.user().isUserLoggedIn()) {
+			Log.i("MainActivity", "logged in!");
 			tvHello.setText("Hello!  You are logged in!");
-			
 		} else {
+			Log.i("MainActivity", "not logged in!");
 			Intent intent = new Intent(this, LoginActivity.class);
 	        startActivity(intent);
 		}

@@ -128,6 +128,11 @@ public class LoginActivity extends AccountAuthenticatorActivity {
         LoginActivity.this.finish();
 	}
 	
+	public void launchGoogleLogin(View v){
+		LoginActivity.this.startActivity(new Intent(LoginActivity.this, GoogleLoginActivity.class));
+        LoginActivity.this.finish();
+	}
+	
 	public void registerAccount(View v) {
 		Intent intent = new Intent(this, RegisterNewAccountActivity.class);
         startActivity(intent);

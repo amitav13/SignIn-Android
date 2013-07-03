@@ -54,9 +54,7 @@ public class FacebookLoginActivity extends AccountAuthenticatorActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.facebook_login);
-		
-		mAccountManager = AccountManager.get(this);
-		
+			
 		mAccountManager = AccountManager.get(this);	
 		
 		kinveyClient = ((UserLogin) getApplication()).getKinveyService();

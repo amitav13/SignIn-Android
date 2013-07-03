@@ -1,27 +1,27 @@
 package com.kinvey.sample.signin;
 
-import com.kinvey.android.Client;
-import com.kinvey.android.callback.KinveyUserCallback;
-import com.kinvey.java.User;
-
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.accounts.Account;
-import android.accounts.AccountManager;
-import android.accounts.AccountAuthenticatorActivity;
-import android.app.Dialog;
-import android.app.ProgressDialog;
-import android.util.Log;
-import android.view.Gravity;
-import android.widget.Toast;
-import android.content.Context;
-import android.content.Intent; 
-import android.net.Uri;
 import oauth.signpost.OAuth;
 import oauth.signpost.OAuthConsumer;
 import oauth.signpost.OAuthProvider;
 import oauth.signpost.commonshttp.CommonsHttpOAuthConsumer;
 import oauth.signpost.commonshttp.CommonsHttpOAuthProvider;
+import android.accounts.Account;
+import android.accounts.AccountAuthenticatorActivity;
+import android.accounts.AccountManager;
+import android.app.Dialog;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Gravity;
+import android.widget.Toast;
+
+import com.kinvey.android.Client;
+import com.kinvey.android.callback.KinveyUserCallback;
+import com.kinvey.java.User;
 
 /**
  * 

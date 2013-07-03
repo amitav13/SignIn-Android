@@ -17,18 +17,14 @@ In particular this sample application highlights the following key backend tasks
 3. Click __Android &rarr; Existing Android Code into Workspace__
 4. __Browse…__ to set __Root Directory__ to the cloned repository from step 1
 5. In the __Projects__ box, make sure the __MainActivity__ project check box is selected. Then click __Finish__.
-6. Specify your app key and secret in `UserLogin` constant variables
+6. Specify your app key and secret in `assets/kinvey.properties` constant variables
 ![key and secret]()
 
 
 ```java
-public class UserLogin extends Application {
+app.key=MY_APP_KEY
 
-	private static final String APP_KEY = "your_app_key";
-    private static final String APP_SECRET = "your_app_secret";
-
-	
-	...
+app.secret=MY_APP_SECRET
 ```
 
 ## Required Libraries
