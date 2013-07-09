@@ -32,3 +32,4 @@ The following libraries are required to run this sample:
 * [Kinvey Android Library](http://devcenter.kinvey.com/android/downloads)
 * [Facebook SDK for Android](https://developers.facebook.com/android/)
 * Google Play Services (Available in the *Android SDK Manager*)
+* [Action Bar Sherlock](http://actionbarsherlock.com/)
