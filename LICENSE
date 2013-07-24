@@ -179,9 +179,9 @@
 
 SECTION 1: Apache License, V2.0
 
-   >>> authorized-activity-1.0
-   >>> signpost-commonshttp4-1.2.1.1
-   >>> signpost-core-1.2.1.1
+   >>> authorized-activity-1.0 [apache-2.0] - used for google plus authentication
+   >>> signpost-commonshttp4-1.2.1.1 [apache-2.0] - used for twitter authentication
+   >>> signpost-core-1.2.1.1 [apache-2.0] - used for twitter authentication
 
 
 --------------- SECTION 1: Apache License, V2.0 ----------
