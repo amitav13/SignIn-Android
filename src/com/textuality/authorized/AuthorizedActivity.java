@@ -1,4 +1,4 @@
-package com.textuality.authorized;/*
+/*
  * Copyright 2012 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,6 +13,7 @@ package com.textuality.authorized;/*
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.textuality.authorized;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
