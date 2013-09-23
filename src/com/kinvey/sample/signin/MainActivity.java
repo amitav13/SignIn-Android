@@ -1,31 +1,30 @@
-/*
+/** 
  * Copyright (c) 2013 Kinvey Inc.
- *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  * in compliance with the License. You may obtain a copy of the License at
- *
+ * 
  * http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing, software distributed under the License
  * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
+ * 
  */
+
 package com.kinvey.sample.signin;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import com.google.api.client.http.HttpTransport;
 
+import android.os.Bundle;
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
 
-import com.google.api.client.http.HttpTransport;
-import com.kinvey.android.Client;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Launch Activity checks to see if a KinveyUser exists as a
@@ -44,8 +43,6 @@ public class MainActivity extends Activity {
 	private TextView tvHello;
 
     private static final Level LOGGING_LEVEL = Level.FINEST;
-    
-    private Client kinveyClient;
 
 
     @Override
@@ -55,18 +52,15 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
         Logger.getLogger(HttpTransport.class.getName()).setLevel(LOGGING_LEVEL);
 
-        kinveyClient = ((UserLogin) getApplication()).getKinveyService();
 
 
         tvHello = (TextView) findViewById(R.id.tvHello);
-		if (kinveyClient.user().isUserLoggedIn()) {
-			Log.i("MainActivity", "logged in!");
+		if (loggedIn()) {
 			tvHello.setText("Hello!  You are logged in!");
 		} else {
-			Log.i("MainActivity", "not logged in!");
-			Intent intent = new Intent(this, LoginActivity.class);
-	        startActivity(intent);
-		}
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+        }
 		
 	}
 	

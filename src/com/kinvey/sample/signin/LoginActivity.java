@@ -1,16 +1,17 @@
-/*
+/** 
  * Copyright (c) 2013 Kinvey Inc.
- *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  * in compliance with the License. You may obtain a copy of the License at
- *
+ * 
  * http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing, software distributed under the License
  * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
+ * 
  */
+
 package com.kinvey.sample.signin;
 
 import android.accounts.Account;
@@ -140,12 +141,17 @@ public class LoginActivity extends AccountAuthenticatorActivity {
 		LoginActivity.this.startActivity(new Intent(LoginActivity.this, FacebookLoginActivity.class));
         LoginActivity.this.finish();
 	}
-	
-	public void launchGoogleLogin(View v){
-		LoginActivity.this.startActivity(new Intent(LoginActivity.this, GoogleLoginActivity.class));
+
+    public void launchGoogleLogin(View v){
+        LoginActivity.this.startActivity(new Intent(LoginActivity.this, GoogleLoginActivity.class));
         LoginActivity.this.finish();
-	}
-	
+    }
+
+    public void launchLinkedInLogin(View v){
+        LoginActivity.this.startActivity(new Intent(LoginActivity.this, LinkedinLoginActivity.class));
+        LoginActivity.this.finish();
+    }
+
 	public void registerAccount(View v) {
 		Intent intent = new Intent(this, RegisterNewAccountActivity.class);
         startActivity(intent);
