@@ -49,7 +49,6 @@ public class KinveyAccountAuthenticator extends AbstractAccountAuthenticator {
 		super(context);
 		mContext = context;
 		kinveyClient = new Client.Builder(mContext).build();
-		// TODO:  Need to solve how to pass KinveyService context through the AccountAuthenticator,
 	}
 
 	@Override
@@ -68,14 +67,12 @@ public class KinveyAccountAuthenticator extends AbstractAccountAuthenticator {
 	@Override
 	public Bundle confirmCredentials(AccountAuthenticatorResponse response,
 			Account account, Bundle options) throws NetworkErrorException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Bundle editProperties(AccountAuthenticatorResponse response,
 			String accountType) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -112,9 +109,6 @@ public class KinveyAccountAuthenticator extends AbstractAccountAuthenticator {
 		// No valid user
 		final Intent intent = new Intent(mContext, LoginActivity.class);
 		
-		// TODO:  Remove comments on putExtras
-		//intent.putExtra(LoginActivity.PARAM_AUTHTOKEN_TYPE, authTokenType);
-		//intent.putExtra(LoginActivity.PARAM_AUTHENTICATOR_RESPONSE, response);
 		final Bundle bundle = new Bundle();
 		bundle.putParcelable(AccountManager.KEY_INTENT, intent);
 		return bundle;
@@ -122,14 +116,12 @@ public class KinveyAccountAuthenticator extends AbstractAccountAuthenticator {
 
 	@Override
 	public String getAuthTokenLabel(String authTokenType) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Bundle hasFeatures(AccountAuthenticatorResponse response,
 			Account account, String[] features) throws NetworkErrorException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -137,7 +129,6 @@ public class KinveyAccountAuthenticator extends AbstractAccountAuthenticator {
 	public Bundle updateCredentials(AccountAuthenticatorResponse response,
 			Account account, String authTokenType, Bundle options)
 			throws NetworkErrorException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
